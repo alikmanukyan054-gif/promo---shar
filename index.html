@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Промо Шар — Идеальный акцент для любого события</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOPBAR (desktop only) -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <span class="topbar__brand">BURGER KING</span>
+      <span class="topbar__sep">·</span>
+      <span class="topbar__text">200 шаров в день</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a href="/" class="logo" aria-label="Промо Шар — главная">
+        <svg class="logo__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="16" fill="url(#lg0)"/>
+          <ellipse cx="13" cy="18" rx="4" ry="5.5" fill="white" opacity="0.95"/>
+          <ellipse cx="20" cy="15" rx="3.5" ry="5" fill="white" opacity="0.85"/>
+          <ellipse cx="16" cy="20" rx="3" ry="4.5" fill="white" opacity="0.9"/>
+          <defs>
+            <linearGradient id="lg0" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8EDA3F"/><stop offset="1" stop-color="#4CAF1A"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo__text">ПРОМО ШАР</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="header__nav" aria-label="Главное меню">
+        <a class="nav__link" href="#">Шары</a>
+        <a class="nav__link" href="#">Партнёрам</a>
+        <a class="nav__link" href="#examples">Примеры</a>
+        <a class="nav__link" href="#why">Отзывы</a>
+        <a class="nav__link" href="#callback">Контакты</a>
+      </nav>
+
+      <!-- Desktop contacts -->
+      <div class="header__contacts">
+        <a class="header__phone" href="tel:+74996475147">+7 499 647-51-47</a>
+        <div class="header__socials">
+          <a class="header__social" href="#" aria-label="ВКонтакте">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#4680C2"/><path d="M7.5 10.5H9.8C9.8 10.5 10.2 14.2 11.5 14.8C12.5 15.3 13 13.5 13 12V10.5H15.3V12.2C15.3 13.8 14.8 15.7 16 15.7C17 15.7 18.2 14.5 18.2 10.5H20.5C20.5 14.5 18.8 17.5 16.2 17.5C14.8 17.5 14 16.5 13.8 16C13.5 16.7 12.5 17.5 11.2 17.5C8.8 17.5 7.5 14 7.5 10.5Z" fill="white"/></svg>
+          </a>
+          <a class="header__social" href="#" aria-label="WhatsApp">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="#25D366"/><path d="M14 7C10.1 7 7 10.1 7 14C7 15.4 7.4 16.7 8.1 17.8L7 21L10.3 19.9C11.4 20.6 12.7 21 14 21C17.9 21 21 17.9 21 14C21 10.1 17.9 7 14 7ZM17.8 16.8C17.6 17.3 16.7 17.8 16.3 17.8C15.9 17.9 15.4 17.9 14.9 17.7C14.6 17.6 14.1 17.4 13.5 17.1C11.5 16.1 10.2 14.1 10.1 14C10 13.9 9.3 13 9.3 12C9.3 11 9.8 10.5 10 10.3C10.2 10.1 10.5 10 10.7 10C10.8 10 10.9 10 11 10C11.2 10 11.4 10 11.6 10.5C11.8 11 12.3 12 12.3 12.1C12.4 12.2 12.4 12.3 12.3 12.4C12.2 12.5 12.2 12.6 12.1 12.7C12 12.8 11.9 12.9 11.8 13C11.7 13.1 11.6 13.2 11.7 13.4C11.8 13.6 12.3 14.4 13 15C13.9 15.7 14.6 16 14.9 16.1C15.1 16.2 15.3 16.2 15.4 16C15.5 15.8 16 15.2 16.2 15C16.4 14.8 16.5 14.8 16.7 14.9C16.9 15 17.9 15.5 18.1 15.6C18.3 15.7 18.4 15.8 18.5 15.8C18.5 15.9 18.5 16.3 18.3 16.8H17.8Z" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Burger button -->
+      <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Мобильное меню">
+    <a class="mobile-menu__link" href="#">Шары</a>
+    <a class="mobile-menu__link" href="#">Партнёрам</a>
+    <a class="mobile-menu__link" href="#examples">Примеры</a>
+    <a class="mobile-menu__link" href="#why">Отзывы</a>
+    <a class="mobile-menu__link" href="#callback">Контакты</a>
+    <div class="mobile-menu__bottom">
+      <a class="mobile-menu__phone" href="tel:+74996475147">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#8EDA3F"/><path d="M5 5C5 4.4 5.4 4 6 4H8.2C8.7 4 9.1 4.4 9.1 4.9L9.8 8.9C9.9 9.4 9.6 9.9 9.1 10.1L7.8 10.8C8.8 12.8 10.6 14.3 12.6 15L13.3 13.6C13.6 13.1 14.1 12.9 14.6 13L18 13.7V14C18 14.6 17.6 15 17 15H16C10.5 15 5 9.5 5 4V5Z" fill="white"/></svg>
+        +7 499 647-51-47
+      </a>
+      <div class="mobile-menu__socials">
+        <a href="#" aria-label="ВКонтакте">
+          <svg width="32" height="32" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#4680C2"/><path d="M7.5 10.5H9.8C9.8 10.5 10.2 14.2 11.5 14.8C12.5 15.3 13 13.5 13 12V10.5H15.3V12.2C15.3 13.8 14.8 15.7 16 15.7C17 15.7 18.2 14.5 18.2 10.5H20.5C20.5 14.5 18.8 17.5 16.2 17.5C14.8 17.5 14 16.5 13.8 16C13.5 16.7 12.5 17.5 11.2 17.5C8.8 17.5 7.5 14 7.5 10.5Z" fill="white"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp">
+          <svg width="32" height="32" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#25D366"/><path d="M14 7C10.1 7 7 10.1 7 14C7 15.4 7.4 16.7 8.1 17.8L7 21L10.3 19.9C11.4 20.6 12.7 21 14 21C17.9 21 21 17.9 21 14C21 10.1 17.9 7 14 7ZM17.8 16.8C17.6 17.3 16.7 17.8 16.3 17.8C15.9 17.9 15.4 17.9 14.9 17.7C14.6 17.6 14.1 17.4 13.5 17.1C11.5 16.1 10.2 14.1 10.1 14C10 13.9 9.3 13 9.3 12C9.3 11 9.8 10.5 10 10.3C10.2 10.1 10.5 10 10.7 10C10.8 10 10.9 10 11 10C11.2 10 11.4 10 11.6 10.5C11.8 11 12.3 12 12.3 12.1C12.4 12.2 12.4 12.3 12.3 12.4C12.2 12.5 12.2 12.6 12.1 12.7C12 12.8 11.9 12.9 11.8 13C11.7 13.1 11.6 13.2 11.7 13.4C11.8 13.6 12.3 14.4 13 15C13.9 15.7 14.6 16 14.9 16.1C15.1 16.2 15.3 16.2 15.4 16C15.5 15.8 16 15.2 16.2 15C16.4 14.8 16.5 14.8 16.7 14.9C16.9 15 17.9 15.5 18.1 15.6C18.3 15.7 18.4 15.8 18.5 15.8C18.5 15.9 18.5 16.3 18.3 16.8H17.8Z" fill="white"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <section class="hero">
+      <div class="hero__inner">
+
+        <!-- Balloon scene on mobile sits on TOP -->
+        <div class="hero__visual" aria-hidden="true">
+          <img
+            src="sharik.png"
+            alt=""
+            class="hero__balloons-img"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+
+        <!-- Content -->
+        <div class="hero__content">
+          <h1 class="hero__title">Идеальный акцент<br>для любого события</h1>
+          <p class="hero__subtitle">Доставка по всей России!</p>
+
+          <!-- Categories scroll row -->
+          <div class="categories" role="list">
+            <button class="cat-item cat-item--active" role="listitem" type="button">
+              <div class="cat-item__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 80 96" aria-hidden="true">
+                  <ellipse cx="40" cy="44" rx="34" ry="40" fill="url(#cg1)"/>
+                  <ellipse cx="28" cy="32" rx="12" ry="14" fill="white" opacity="0.35"/>
+                  <line x1="40" y1="84" x2="40" y2="96" stroke="#aaa" stroke-width="1.5"/>
+                  <defs><radialGradient id="cg1" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#c8f5a0"/><stop offset="1" stop-color="#78d000"/></radialGradient></defs>
+                </svg>
+              </div>
+              <span class="cat-item__label">Печать на шарах</span>
+            </button>
+            <button class="cat-item" role="listitem" type="button">
+              <div class="cat-item__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 80 96" aria-hidden="true">
+                  <ellipse cx="40" cy="44" rx="34" ry="40" fill="url(#cg2)"/>
+                  <ellipse cx="28" cy="32" rx="12" ry="14" fill="white" opacity="0.35"/>
+                  <line x1="40" y1="84" x2="40" y2="96" stroke="#aaa" stroke-width="1.5"/>
+                  <defs><radialGradient id="cg2" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#ff9fc8"/><stop offset="1" stop-color="#e0006b"/></radialGradient></defs>
+                </svg>
+              </div>
+              <span class="cat-item__label">Печать на пакетах</span>
+            </button>
+            <button class="cat-item" role="listitem" type="button">
+              <div class="cat-item__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 80 96" aria-hidden="true">
+                  <ellipse cx="40" cy="44" rx="34" ry="40" fill="url(#cg3)"/>
+                  <ellipse cx="28" cy="32" rx="12" ry="14" fill="white" opacity="0.4"/>
+                  <line x1="40" y1="84" x2="40" y2="96" stroke="#aaa" stroke-width="1.5"/>
+                  <defs><radialGradient id="cg3" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#fffb80"/><stop offset="1" stop-color="#ffbb00"/></radialGradient></defs>
+                </svg>
+              </div>
+              <span class="cat-item__label">Фотозоны и декор</span>
+            </button>
+            <button class="cat-item" role="listitem" type="button">
+              <div class="cat-item__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 80 96" aria-hidden="true">
+                  <ellipse cx="40" cy="44" rx="34" ry="40" fill="url(#cg4)"/>
+                  <ellipse cx="28" cy="32" rx="12" ry="14" fill="white" opacity="0.35"/>
+                  <line x1="40" y1="84" x2="40" y2="96" stroke="#aaa" stroke-width="1.5"/>
+                  <defs><radialGradient id="cg4" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#90d8ff"/><stop offset="1" stop-color="#0070e0"/></radialGradient></defs>
+                </svg>
+              </div>
+              <span class="cat-item__label">Оформление шарами</span>
+            </button>
+            <button class="cat-item" role="listitem" type="button">
+              <div class="cat-item__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 80 96" aria-hidden="true">
+                  <ellipse cx="40" cy="44" rx="34" ry="40" fill="url(#cg5)"/>
+                  <ellipse cx="28" cy="32" rx="12" ry="14" fill="white" opacity="0.35"/>
+                  <line x1="40" y1="84" x2="40" y2="96" stroke="#aaa" stroke-width="1.5"/>
+                  <defs><radialGradient id="cg5" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#ffa07a"/><stop offset="1" stop-color="#e03000"/></radialGradient></defs>
+                </svg>
+              </div>
+              <span class="cat-item__label">С логотипом</span>
+            </button>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero__actions">
+            <a href="#callback" class="btn btn--primary">Рассчитать стоимость</a>
+            <a href="#examples" class="btn btn--ghost">Посмотреть примеры</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ STATS ═══ -->
+    <section class="stats">
+      <div class="stats__inner">
+        <div class="stats__item">
+          <span class="stats__value" data-count="24">0</span><span class="stats__unit"> часа</span>
+          <span class="stats__label">Среднее время<br>заказа</span>
+        </div>
+        <div class="stats__sep" aria-hidden="true"></div>
+        <div class="stats__item">
+          <span class="stats__value" data-count="500">0</span><span class="stats__unit">+</span>
+          <span class="stats__label">Проектов<br>реализовано</span>
+        </div>
+        <div class="stats__sep" aria-hidden="true"></div>
+        <div class="stats__item">
+          <div class="stats__rating-row">
+            <span class="stats__value" data-decimal="4.9">0</span>
+            <svg width="56" height="11" viewBox="0 0 56 11" aria-label="5 звёзд"><text x="0" y="10" font-size="11" fill="#FFC107">★★★★★</text></svg>
+          </div>
+          <span class="stats__label">Средний<br>рейтинг</span>
+        </div>
+        <div class="stats__sep" aria-hidden="true"></div>
+        <div class="stats__item">
+          <span class="stats__value" data-count="7">0</span>
+          <span class="stats__label">Лет доставки<br>праздника ярче</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CATEGORIES CARDS ═══ -->
+    <section class="services" id="examples">
+      <div class="services__inner">
+        <div class="services__grid">
+
+          <!-- Card 1: Печать на пакетах -->
+          <a href="#" class="svc-card">
+            <div class="svc-card__img-wrap">
+              <!-- Packages illustration -->
+              <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" class="svc-card__svg" aria-hidden="true">
+                <!-- Back bag -->
+                <rect x="60" y="28" width="64" height="80" rx="8" fill="#b8e4f9" opacity="0.85"/>
+                <rect x="60" y="28" width="64" height="18" rx="8" fill="#7ecef4"/>
+                <rect x="76" y="16" width="12" height="18" rx="4" fill="#7ecef4"/>
+                <rect x="96" y="16" width="12" height="18" rx="4" fill="#7ecef4"/>
+                <!-- Front bag -->
+                <rect x="36" y="38" width="64" height="76" rx="8" fill="#fde0f0"/>
+                <rect x="36" y="38" width="64" height="18" rx="8" fill="#f9a8d4"/>
+                <rect x="50" y="26" width="12" height="18" rx="4" fill="#f9a8d4"/>
+                <rect x="70" y="26" width="12" height="18" rx="4" fill="#f9a8d4"/>
+                <!-- Label on front bag -->
+                <rect x="46" y="64" width="44" height="30" rx="4" fill="white" opacity="0.7"/>
+                <rect x="50" y="69" width="36" height="4" rx="2" fill="#e879c0"/>
+                <rect x="50" y="77" width="28" height="3" rx="2" fill="#c4b5d0" opacity="0.8"/>
+                <rect x="50" y="83" width="32" height="3" rx="2" fill="#c4b5d0" opacity="0.6"/>
+                <!-- Stars/shine -->
+                <circle cx="130" cy="28" r="5" fill="#fbbf24" opacity="0.7"/>
+                <circle cx="140" cy="42" r="3" fill="#fbbf24" opacity="0.5"/>
+                <circle cx="26" cy="50" r="4" fill="#a78bfa" opacity="0.5"/>
+              </svg>
+            </div>
+            <span class="svc-card__label">печать на<br>пакетах</span>
+          </a>
+
+          <!-- Card 2: Печать на воздушных шарах -->
+          <a href="#" class="svc-card">
+            <div class="svc-card__img-wrap">
+              <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" class="svc-card__svg" aria-hidden="true">
+                <!-- Balloon 1 pink -->
+                <ellipse cx="56" cy="52" rx="24" ry="30" fill="url(#b1g)" />
+                <ellipse cx="48" cy="40" rx="8" ry="10" fill="white" opacity="0.28"/>
+                <polygon points="56,82 52,88 60,88" fill="#f9a8d4"/>
+                <line x1="56" y1="88" x2="54" y2="110" stroke="#bbb" stroke-width="1.2"/>
+                <!-- Balloon 2 yellow-orange -->
+                <ellipse cx="88" cy="44" rx="22" ry="28" fill="url(#b2g)" />
+                <ellipse cx="80" cy="33" rx="7" ry="9" fill="white" opacity="0.28"/>
+                <polygon points="88,72 84,78 92,78" fill="#fcd34d"/>
+                <line x1="88" y1="78" x2="86" y2="110" stroke="#bbb" stroke-width="1.2"/>
+                <!-- Balloon 3 green -->
+                <ellipse cx="118" cy="56" rx="20" ry="26" fill="url(#b3g)" />
+                <ellipse cx="111" cy="46" rx="6" ry="8" fill="white" opacity="0.28"/>
+                <polygon points="118,82 114,88 122,88" fill="#86efac"/>
+                <line x1="118" y1="88" x2="116" y2="110" stroke="#bbb" stroke-width="1.2"/>
+                <!-- Logo prints on balloons -->
+                <text x="44" y="54" font-family="Montserrat,sans-serif" font-size="6" font-weight="800" fill="white" text-anchor="middle" opacity="0.85">Бургер</text>
+                <text x="44" y="62" font-family="Montserrat,sans-serif" font-size="6" font-weight="800" fill="white" text-anchor="middle" opacity="0.85">Кинг</text>
+                <text x="88" y="44" font-family="Montserrat,sans-serif" font-size="5.5" font-weight="800" fill="white" text-anchor="middle" opacity="0.85">Супер</text>
+                <text x="88" y="51" font-family="Montserrat,sans-serif" font-size="5.5" font-weight="800" fill="white" text-anchor="middle" opacity="0.85">лента</text>
+                <!-- Ribbon -->
+                <path d="M54 110 Q60 118 58 125 M86 110 Q92 118 90 125 M116 110 Q122 118 120 125" stroke="#ccc" stroke-width="1.2" fill="none"/>
+                <defs>
+                  <radialGradient id="b1g" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#fda4cc"/><stop offset="1" stop-color="#e0006b"/></radialGradient>
+                  <radialGradient id="b2g" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></radialGradient>
+                  <radialGradient id="b3g" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#bbf7d0"/><stop offset="1" stop-color="#16a34a"/></radialGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="svc-card__label">печать на<br>воздушных шарах</span>
+          </a>
+
+          <!-- Card 3: Фотозоны -->
+          <a href="#" class="svc-card">
+            <div class="svc-card__img-wrap">
+              <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" class="svc-card__svg" aria-hidden="true">
+                <!-- Fluffy cloud-like photozone fabric -->
+                <!-- Big fluffy pom-poms cluster -->
+                <circle cx="80" cy="68" r="32" fill="url(#pm0)"/>
+                <circle cx="54" cy="74" r="24" fill="url(#pm1)"/>
+                <circle cx="106" cy="70" r="22" fill="url(#pm2)"/>
+                <circle cx="70" cy="52" r="18" fill="url(#pm3)"/>
+                <circle cx="96" cy="50" r="16" fill="url(#pm4)"/>
+                <circle cx="56" cy="58" r="14" fill="url(#pm5)"/>
+                <!-- Small poms -->
+                <circle cx="38" cy="82" r="14" fill="url(#pm6)"/>
+                <circle cx="120" cy="80" r="12" fill="url(#pm2)"/>
+                <circle cx="80" cy="40" r="12" fill="url(#pm3)"/>
+                <!-- Tag/label -->
+                <rect x="64" y="20" width="32" height="14" rx="4" fill="white" opacity="0.85"/>
+                <text x="80" y="31" font-family="Montserrat,sans-serif" font-size="8" font-weight="700" fill="#7c3aed" text-anchor="middle">suite</text>
+                <defs>
+                  <radialGradient id="pm0" cx="40%" cy="35%" r="65%"><stop offset="0" stop-color="#f0abfc"/><stop offset="1" stop-color="#c026d3"/></radialGradient>
+                  <radialGradient id="pm1" cx="40%" cy="35%" r="65%"><stop offset="0" stop-color="#bfdbfe"/><stop offset="1" stop-color="#3b82f6"/></radialGradient>
+                  <radialGradient id="pm2" cx="40%" cy="35%" r="65%"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></radialGradient>
+                  <radialGradient id="pm3" cx="40%" cy="35%" r="65%"><stop offset="0" stop-color="#bbf7d0"/><stop offset="1" stop-color="#22c55e"/></radialGradient>
+                  <radialGradient id="pm4" cx="40%" cy="35%" r="65%"><stop offset="0" stop-color="#fca5a5"/><stop offset="1" stop-color="#ef4444"/></radialGradient>
+                  <radialGradient id="pm5" cx="40%" cy="35%" r="65%"><stop offset="0" stop-color="#fed7aa"/><stop offset="1" stop-color="#f97316"/></radialGradient>
+                  <radialGradient id="pm6" cx="40%" cy="35%" r="65%"><stop offset="0" stop-color="#e9d5ff"/><stop offset="1" stop-color="#a855f7"/></radialGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="svc-card__label">фотозоны и декор<br>мероприятий</span>
+          </a>
+
+          <!-- Card 4: Оформление шарами -->
+          <a href="#" class="svc-card">
+            <div class="svc-card__img-wrap">
+              <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" class="svc-card__svg" aria-hidden="true">
+                <!-- Balloon dog body - orange/amber -->
+                <!-- Body -->
+                <ellipse cx="80" cy="82" rx="22" ry="16" fill="url(#dog1)"/>
+                <!-- Head -->
+                <circle cx="80" cy="56" r="16" fill="url(#dog1)"/>
+                <ellipse cx="72" cy="52" rx="5" ry="5" fill="white" opacity="0.3"/>
+                <!-- Ears (balloon sausages) -->
+                <ellipse cx="66" cy="46" rx="5" ry="12" fill="url(#dog2)" transform="rotate(-20 66 46)"/>
+                <ellipse cx="94" cy="46" rx="5" ry="12" fill="url(#dog2)" transform="rotate(20 94 46)"/>
+                <!-- Snout -->
+                <ellipse cx="80" cy="64" rx="8" ry="6" fill="url(#dog3)"/>
+                <circle cx="77" cy="63" r="2" fill="#1a1a1a"/>
+                <circle cx="83" cy="63" r="2" fill="#1a1a1a"/>
+                <!-- Nose -->
+                <circle cx="80" cy="61" r="2.5" fill="#1a1a1a"/>
+                <!-- Front legs -->
+                <ellipse cx="64" cy="100" rx="6" ry="14" fill="url(#dog1)" transform="rotate(-15 64 100)"/>
+                <ellipse cx="96" cy="100" rx="6" ry="14" fill="url(#dog1)" transform="rotate(15 96 100)"/>
+                <!-- Back legs -->
+                <ellipse cx="60" cy="90" rx="6" ry="12" fill="url(#dog2)" transform="rotate(-30 60 90)"/>
+                <ellipse cx="100" cy="90" rx="6" ry="12" fill="url(#dog2)" transform="rotate(30 100 90)"/>
+                <!-- Tail -->
+                <ellipse cx="104" cy="76" rx="5" ry="10" fill="url(#dog3)" transform="rotate(45 104 76)"/>
+                <!-- Shine highlights -->
+                <ellipse cx="76" cy="50" rx="3" ry="4" fill="white" opacity="0.22"/>
+                <ellipse cx="76" cy="78" rx="6" ry="4" fill="white" opacity="0.18"/>
+                <defs>
+                  <radialGradient id="dog1" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#fed7aa"/><stop offset="1" stop-color="#ea580c"/></radialGradient>
+                  <radialGradient id="dog2" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#fdba74"/><stop offset="1" stop-color="#c2410c"/></radialGradient>
+                  <radialGradient id="dog3" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#b45309"/></radialGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="svc-card__label">оформление<br>воздушными шарами</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ PARTNERS ═══ -->
+    <section class="partners">
+      <div class="partners__inner">
+        <div class="partners__logos">
+          <div class="partners__item">
+            <svg width="100" height="38" viewBox="0 0 110 40" fill="none"><rect width="110" height="40" rx="6" fill="#F5A623"/><text x="55" y="14" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" font-weight="800" fill="white" letter-spacing="0.5">BURGER</text><text x="55" y="27" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" font-weight="800" fill="white" letter-spacing="0.5">KING</text><circle cx="55" cy="36" r="2" fill="#D62300"/></svg>
+          </div>
+          <div class="partners__item">
+            <svg width="80" height="32" viewBox="0 0 90 36" fill="none"><rect width="90" height="36" rx="5" fill="#E8001A"/><text x="45" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="11" font-weight="700" fill="white">Все•инстр.</text></svg>
+          </div>
+          <div class="partners__item">
+            <svg width="86" height="32" viewBox="0 0 96 36" fill="none"><rect width="96" height="36" rx="18" fill="#003399"/><text x="48" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="13" font-weight="800" fill="white" letter-spacing="2">NIVEA</text></svg>
+          </div>
+          <div class="partners__item">
+            <svg width="90" height="26" viewBox="0 0 100 28" fill="none"><text x="0" y="20" font-family="Montserrat,sans-serif" font-size="14" font-weight="700" fill="#222" letter-spacing="-0.2">☀ sunlight</text></svg>
+          </div>
+          <div class="partners__item">
+            <svg width="64" height="28" viewBox="0 0 74 30" fill="none"><text x="0" y="24" font-family="Montserrat,sans-serif" font-size="22" font-weight="900" fill="#1a1a1a">МА</text><text x="38" y="24" font-family="Montserrat,sans-serif" font-size="22" font-weight="900" fill="#E30012">ТЧ!</text></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ TICKER ═══ -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker">
+        <span class="ticker__item"><span class="ticker__dot"></span>Печать на воздушных шарах</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Гирлянды из шаров</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Фотозоны и оформление</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Шары гелиевые</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Печать на пакетах</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Готовые композиции</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Доставка по всей России</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Печать на воздушных шарах</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Гирлянды из шаров</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Фотозоны и оформление</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Шары гелиевые</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Печать на пакетах</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Готовые композиции</span>
+        <span class="ticker__item"><span class="ticker__dot"></span>Доставка по всей России</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ WHY ═══ -->
+    <section class="why" id="why">
+      <div class="why__inner">
+        <h2 class="why__title">Почему выбирают нас</h2>
+        <div class="why__grid">
+
+          <article class="why-card">
+            <div class="why-card__icon why-card__icon--green">
+              <svg width="28" height="28" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M4 26L6.5 19.5L22 4L26 8L10.5 23.5L4 26Z" fill="white" stroke="white" stroke-width="0.5"/><path d="M20 6L24 10" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="why-card__body">
+              <h3 class="why-card__title">Любой дизайн</h3>
+              <ul class="why-card__list">
+                <li>Дизайн любой сложности</li>
+                <li>Индивидуальный подход к каждому</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="why-card">
+            <div class="why-card__icon why-card__icon--yellow">
+              <svg width="32" height="26" viewBox="0 0 34 28" fill="none" aria-hidden="true"><rect x="2" y="8" width="20" height="14" rx="2" fill="white"/><path d="M22 12H28L31 18V22H22V12Z" fill="white"/><circle cx="8" cy="23" r="3" fill="white" stroke="#F5A623" stroke-width="2"/><circle cx="26" cy="23" r="3" fill="white" stroke="#F5A623" stroke-width="2"/></svg>
+            </div>
+            <div class="why-card__body">
+              <h3 class="why-card__title">Быстрая доставка</h3>
+              <ul class="why-card__list">
+                <li>Доставка по всей России</li>
+                <li>Точно в срок и без задержек</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="why-card">
+            <div class="why-card__icon why-card__icon--pink">
+              <svg width="28" height="28" viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect x="4" y="12" width="22" height="16" rx="2" fill="white"/><rect x="3" y="9" width="24" height="5" rx="2" fill="white"/><path d="M15 9V26M10 9C10 9 10 4 15 4C20 4 20 9 20 9" stroke="#f06" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <div class="why-card__body">
+              <h3 class="why-card__title">Для бизнеса и частных</h3>
+              <ul class="why-card__list">
+                <li>Сделаем ваш событие лучше</li>
+                <li>Официальный договор и закрывающие</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="why-card">
+            <div class="why-card__icon why-card__icon--teal">
+              <svg width="32" height="28" viewBox="0 0 34 30" fill="none" aria-hidden="true"><ellipse cx="11" cy="14" rx="7" ry="10" fill="white" opacity="0.9"/><ellipse cx="23" cy="12" rx="7" ry="10" fill="white" opacity="0.7"/><line x1="11" y1="24" x2="11" y2="30" stroke="white" stroke-width="1.2"/><line x1="23" y1="22" x2="23" y2="30" stroke="white" stroke-width="1.2"/></svg>
+            </div>
+            <div class="why-card__body">
+              <h3 class="why-card__title">Композиции</h3>
+              <ul class="why-card__list">
+                <li>Подберём идеальный вариант</li>
+                <li>Готовые праздничные наборы</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="why__cta">
+          <a href="#callback" class="btn btn--primary">Рассчитать стоимость</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CTA / CALLBACK ═══ -->
+    <section class="cta" id="callback">
+      <div class="cta__inner">
+
+        <div class="cta__content">
+          <h2 class="cta__title">ХОТИТЕ СДЕЛАТЬ ВАШ<br>ПРАЗДНИК <em class="cta__accent">ЯРЧЕ?</em></h2>
+          <p class="cta__sub">Оставьте заявку, и мы свяжемся с вами, чтобы уточнить детали и подготовить композицию к вашему празднику.</p>
+          <form class="cta__form" id="ctaForm" novalidate>
+            <div class="cta__field">
+              <input class="cta__input" type="text" name="name" placeholder="Как к вам обращаться" autocomplete="given-name" />
+            </div>
+            <div class="cta__field">
+              <input class="cta__input" type="tel" name="phone" placeholder="+7 (000) 000 00 00" autocomplete="tel" inputmode="tel" />
+            </div>
+            <div class="cta__field">
+              <input class="cta__input" type="text" name="comment" placeholder="Ваши пожелания к заказу" />
+            </div>
+            <button class="btn btn--primary cta__submit" type="submit">Заказать звонок</button>
+          </form>
+        </div>
+
+        <!-- Balloon visual -->
+        <div class="cta__visual" aria-hidden="true">
+          <div class="cta__balloon cta__balloon--phone">
+            <img src="telefon.png" alt="" class="cta__balloon-img cta__balloon-img--phone" loading="lazy" decoding="async" />
+          </div>
+          <div class="cta__balloon cta__balloon--envelope">
+            <img src="2.png" alt="" class="cta__balloon-img cta__balloon-img--envelope" loading="lazy" decoding="async" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ MAP ═══ -->
+    <section class="map-section">
+      <div class="map-section__inner">
+        <div class="map-section__map">
+          <!-- Static SVG map fallback -->
+          <div class="map-static" id="mapStatic">
+            <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="360" fill="#e8eae6"/>
+              <rect x="0" y="72"  width="600" height="18" fill="#fff" opacity="0.92"/>
+              <rect x="0" y="158" width="600" height="14" fill="#fff" opacity="0.88"/>
+              <rect x="0" y="235" width="600" height="20" fill="#fff" opacity="0.92"/>
+              <rect x="72"  y="0" width="14" height="360" fill="#fff" opacity="0.88"/>
+              <rect x="175" y="0" width="20" height="360" fill="#fff" opacity="0.92"/>
+              <rect x="295" y="0" width="14" height="360" fill="#fff" opacity="0.88"/>
+              <rect x="415" y="0" width="18" height="360" fill="#fff" opacity="0.92"/>
+              <rect x="90"  y="90"  width="81"  height="64" rx="3" fill="#d4d8cf"/>
+              <rect x="195" y="90"  width="96"  height="64" rx="3" fill="#d4d8cf"/>
+              <rect x="311" y="90"  width="100" height="64" rx="3" fill="#d4d8cf"/>
+              <rect x="433" y="90"  width="89"  height="64" rx="3" fill="#c6dfc0"/>
+              <rect x="90"  y="172" width="81"  height="59" rx="3" fill="#d4d8cf"/>
+              <rect x="195" y="172" width="96"  height="59" rx="3" fill="#d4d8cf"/>
+              <rect x="311" y="172" width="100" height="59" rx="3" fill="#d4d8cf"/>
+              <rect x="433" y="172" width="89"  height="59" rx="3" fill="#d4d8cf"/>
+              <rect x="90"  y="253" width="81"  height="51" rx="3" fill="#d4d8cf"/>
+              <rect x="195" y="253" width="96"  height="51" rx="3" fill="#d4d8cf"/>
+              <rect x="311" y="253" width="100" height="51" rx="3" fill="#d4d8cf"/>
+              <rect x="433" y="253" width="89"  height="51" rx="3" fill="#d4d8cf"/>
+              <rect x="90"  y="10"  width="81"  height="58" rx="3" fill="#c6dfc0"/>
+              <text x="196" y="68"  font-family="Montserrat,Arial,sans-serif" font-size="9" fill="#999" font-weight="600">ул. Тверская</text>
+              <text x="196" y="154" font-family="Montserrat,Arial,sans-serif" font-size="9" fill="#999" font-weight="600">ул. Арбат</text>
+              <text x="196" y="231" font-family="Montserrat,Arial,sans-serif" font-size="9" fill="#999" font-weight="600">Садовое кольцо</text>
+              <circle cx="300" cy="178" r="26" fill="#8EDA3F" opacity="0.15"/>
+              <circle cx="300" cy="178" r="16" fill="#8EDA3F" opacity="0.28"/>
+              <path d="M300 154c-11.5 0-20.5 9.4-20.5 21 0 15.5 20.5 34 20.5 34s20.5-18.5 20.5-34c0-11.6-9.1-21-20.5-21zm0 29a8 8 0 110-16 8 8 0 010 16z" fill="#3a9a10"/>
+              <circle cx="300" cy="175" r="5" fill="white"/>
+              <rect x="218" y="218" width="164" height="30" rx="8" fill="white" opacity="0.96"/>
+              <text x="300" y="238" font-family="Montserrat,Arial,sans-serif" font-size="12" fill="#1a1a1a" font-weight="800" text-anchor="middle">ПРОМО ШАР</text>
+            </svg>
+          </div>
+          <!-- Google Maps iframe — fades in on load -->
+          <iframe
+            id="mapIframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.372305395081!2d37.619504!3d55.753215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JrRgNCw0YHQvdCw0Y8g0L_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1700000000000!5m2!1sru!2sru"
+            width="100%" height="100%" frameborder="0" loading="lazy"
+            title="Карта проезда" referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen style="border:0;position:absolute;inset:0;z-index:2;opacity:0;transition:opacity .4s ease"
+          ></iframe>
+        </div>
+        <div class="map-section__info">
+          <a href="/" class="logo logo--sm" aria-label="Промо Шар">
+            <svg width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="url(#lgmap)"/><ellipse cx="11" cy="16" rx="3.5" ry="5" fill="white" opacity="0.95"/><ellipse cx="17.5" cy="13" rx="3" ry="4.5" fill="white" opacity="0.85"/><defs><linearGradient id="lgmap" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#8EDA3F"/><stop offset="1" stop-color="#4CAF1A"/></linearGradient></defs></svg>
+            <span class="logo__text">ПРОМО ШАР</span>
+          </a>
+          <ul class="map-info__list">
+            <li class="map-info__item">
+              <svg class="map-info__ico" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#8EDA3F"/><path d="M8 3.5V8.5L11 10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Пн–Вс: 8:00 – 23:00</span>
+            </li>
+            <li class="map-info__item">
+              <svg class="map-info__ico" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#8EDA3F"/><path d="M5.5 5C5.5 5 5 7.5 7 9.5C9 11.5 11.5 11 11.5 11L11 9L9 8.5L8.5 9.5C8.5 9.5 6.5 8.5 6.5 6.5L7.5 6L7 4L5.5 5Z" fill="white"/></svg>
+              <a href="tel:+74996475147"><span>+7 499 647-51-47</span></a>
+            </li>
+            <li class="map-info__item">
+              <svg class="map-info__ico" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#8EDA3F"/><rect x="3" y="5" width="10" height="7" rx="1" stroke="white" stroke-width="1.2" fill="none"/><path d="M3 5.5L8 9L13 5.5" stroke="white" stroke-width="1.2" stroke-linecap="round"/></svg>
+              <a href="mailto:info@promo-shar.ru"><span>info@promo-shar.ru</span></a>
+            </li>
+            <li class="map-info__item">
+              <svg class="map-info__ico" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#8EDA3F"/><path d="M8 2C5.8 2 4 3.8 4 6C4 9 8 14 8 14C8 14 12 9 12 6C12 3.8 10.2 2 8 2ZM8 8C6.9 8 6 7.1 6 6C6 4.9 6.9 4 8 4C9.1 4 10 4.9 10 6C10 7.1 9.1 8 8 8Z" fill="white"/></svg>
+              <span>Москва, ул. Шарообразная, 1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="/" class="logo logo--inv" aria-label="Промо Шар">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="url(#lgf)"/><ellipse cx="11" cy="16" rx="3.5" ry="5" fill="white" opacity="0.95"/><ellipse cx="17.5" cy="13" rx="3" ry="4.5" fill="white" opacity="0.85"/><defs><linearGradient id="lgf" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#8EDA3F"/><stop offset="1" stop-color="#4CAF1A"/></linearGradient></defs></svg>
+        <span class="logo__text logo__text--inv">ПРОМО ШАР</span>
+      </a>
+      <nav class="footer__nav" aria-label="Подвал">
+        <a class="footer__nav-link" href="#">Шары</a>
+        <a class="footer__nav-link" href="#">Партнёрам</a>
+        <a class="footer__nav-link" href="#examples">Примеры</a>
+        <a class="footer__nav-link" href="#why">Отзывы</a>
+        <a class="footer__nav-link" href="#callback">Контакты</a>
+      </nav>
+      <div class="footer__right">
+        <a class="footer__phone" href="tel:+74996475147">+7 499 647-51-47</a>
+        <div class="footer__socials">
+          <a class="footer__social" href="#" aria-label="ВКонтакте">
+            <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" fill="#4680C2"/><path d="M7.5 10.5H9.8C9.8 10.5 10.2 14.2 11.5 14.8C12.5 15.3 13 13.5 13 12V10.5H15.3V12.2C15.3 13.8 14.8 15.7 16 15.7C17 15.7 18.2 14.5 18.2 10.5H20.5C20.5 14.5 18.8 17.5 16.2 17.5C14.8 17.5 14 16.5 13.8 16C13.5 16.7 12.5 17.5 11.2 17.5C8.8 17.5 7.5 14 7.5 10.5Z" fill="white"/></svg>
+          </a>
+          <a class="footer__social" href="#" aria-label="WhatsApp">
+            <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="14" fill="#25D366"/><path d="M14 7C10.1 7 7 10.1 7 14C7 15.4 7.4 16.7 8.1 17.8L7 21L10.3 19.9C11.4 20.6 12.7 21 14 21C17.9 21 21 17.9 21 14C21 10.1 17.9 7 14 7Z" fill="white" opacity="0.9"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <p>© 2025 Промо Шар. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY FOOTER BAR -->
+  <div class="footer-bar" aria-label="Контакты">
+    <a href="/" class="footer-bar__logo" aria-label="Промо Шар">
+      <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="14" fill="url(#lgfb)"/><ellipse cx="11" cy="16" rx="3.5" ry="5" fill="white" opacity="0.95"/><ellipse cx="17.5" cy="13" rx="3" ry="4.5" fill="white" opacity="0.85"/><defs><linearGradient id="lgfb" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#8EDA3F"/><stop offset="1" stop-color="#4CAF1A"/></linearGradient></defs></svg>
+      <span class="footer-bar__text">ПРОМО ШАР</span>
+    </a>
+    <a href="tel:+74996475147" class="footer-bar__phone">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#8EDA3F"/><path d="M4.5 4.5C4.5 3.9 4.9 3.5 5.5 3.5H7.2C7.7 3.5 8.1 3.9 8.1 4.4L8.7 7.4C8.8 7.8 8.5 8.2 8.1 8.4L7.1 8.9C7.9 10.4 9.3 11.6 10.8 12.2L11.3 11.2C11.5 10.8 11.9 10.6 12.3 10.7L15.2 11.2V11.5C15.2 12.1 14.8 12.5 14.2 12.5H13.5C8.5 12.5 4.5 8.5 4.5 3.5V4.5Z" fill="white"/></svg>
+      +7 499 647-51-47
+    </a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
